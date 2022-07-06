@@ -13,17 +13,6 @@ function computerPlay() {
     }
 }
 
-
-// function userPlay() {
-//     let selection = window.prompt('What is your selection?');
-//     return selection;
-// }
-
-let pc = computerPlay();
-console.log(pc);
-let p1 = userPlay();
-
-
 function game(p1, pc){
     if (p1 == 'rock' && pc == 'scissors'){
         return 'Player wins!';
@@ -42,7 +31,19 @@ function game(p1, pc){
     }
 }
 
-console.log(game(p1, pc));
+window.addEventListener('click', function(e){
+    const p1 = e.target.innerText;
+    if (p1 == 'rock' || p1 == 'paper' || p1 == 'scissors'){
+        const pc = computerPlay();
+        console.log(game(p1, pc));
+    }
+});
+
+
+
+
+
+
 
 
 
