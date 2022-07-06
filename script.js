@@ -14,10 +14,10 @@ function computerPlay() {
 }
 
 
-function userPlay() {
-    let selection = window.prompt('What is your selection?');
-    return selection;
-}
+// function userPlay() {
+//     let selection = window.prompt('What is your selection?');
+//     return selection;
+// }
 
 let pc = computerPlay();
 console.log(pc);
